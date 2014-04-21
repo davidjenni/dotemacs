@@ -8,6 +8,7 @@
 
 (require 'cl)
 (require 'init-packages)
+(require 'init-util)
 
 (defgroup dotemacs nil
   "Custom configuration for dotemacs."
@@ -17,15 +18,15 @@
   '(init-core
     init-eyecandy
 
+    init-auto-complete
     init-projectile
     init-ido
 
-    ; init-vcs
+    init-vcs
 
     init-misc
     init-evil
-    ; init-bindings)
-   )
+    init-bindings)
   "Set of modules enabled in dotemacs."
   :group 'dotemacs)
 
